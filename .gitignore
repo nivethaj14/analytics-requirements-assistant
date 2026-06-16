@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
+
+# Output
+requirements_analysis.json
