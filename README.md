@@ -94,7 +94,7 @@ analytics-requirements-assistant/
 
 ---
 
-## 📚 Week 1 Learning Objectives
+## 📚 Learning Objectives
 
 - [x] LLM fundamentals
 - [x] Prompt engineering
