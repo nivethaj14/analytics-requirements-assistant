@@ -34,12 +34,17 @@ st.divider()
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.header("⚙️ Configuration")
+    import os
+api_key = os.environ.get("GROQ_API_KEY", "")
+if not api_key:
     api_key = st.text_input(
         "Groq API Key",
         type="password",
         placeholder="gsk_...",
         help="Get your free key at console.groq.com",
     )
+else:
+    st.success("✅ API key loaded")
     st.markdown("[🔑 Get free Groq API key](https://console.groq.com)", unsafe_allow_html=False)
 
     model_choice = st.selectbox(
